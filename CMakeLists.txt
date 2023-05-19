@@ -39,7 +39,12 @@ endif()
 if(NOT DEFINED CMAKE_CXX_STANDARD)
     set(CMAKE_CXX_STANDARD 17)
 endif()
+if(NOT DEFINED CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug)
+endif()
 message(STATUS "USING: CMAKE_CXX_STANDARD=${CMAKE_CXX_STANDARD}")
+message(STATUS "USING: CMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}")
+message(STATUS "USING: CMAKE_CONFIG_TYPE=$ENV{CMAKE_CONFIG_TYPE}")
 
 
 # ---------------------------------------------------------------------------
